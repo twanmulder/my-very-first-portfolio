@@ -1,0 +1,14 @@
+.-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 1.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition-delay: 0.2s;
+  will-change: transform;
+}
+
+.-show {
+  .-reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
