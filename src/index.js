@@ -10,13 +10,11 @@ import * as serviceWorker from './serviceWorker';
 
 function App() {
   return (
-    <div>
       <Switch>
         <Route path="/">
           <Home />
         </Route>
       </Switch>
-    </div>
   );
 }
 
