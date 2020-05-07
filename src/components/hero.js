@@ -1,15 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Starfield from "./starfield";
+
 function Hero() {
   return (
     <section className="hero">
-      <div className="starfield">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <Starfield />
       <div className="hero-text">
         <h2 className="serif -reveal">Launch your business</h2>
         <p className="-reveal">
