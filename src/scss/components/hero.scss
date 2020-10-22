@@ -1,28 +1,56 @@
 section.hero {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: radial-gradient(60% 60% at 50% 100%, var(--accentColor), var(--bg));
+
+  display: flex;
+  align-items: center;
 }
 
 .hero-text {
-  text-align: center;
-
-  h2 {
-    font-weight: 400;
-  }
+  padding: 0 6.25vw;
 
   p {
-    transition-delay: 0.4s;
+    font-size: 20px;
+    margin: 1.15rem 0;
   }
 
-  .button-wrapper {
-    transition-delay: 0.6s;
+  h2 {
+    margin: 0;
+    font-size: 8vw;
+    overflow: hidden;
 
-    button {
-      margin-top: 0;
+    span {
+      display: inline-block;
+    }
+  }
+
+  a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.25s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      height: 1px;
+      width: 100%;
+      background-color: #fff;
+      transition: all 0.25s ease;
+    }
+
+    &:hover {
+      opacity: 0.75;
+
+      &::before {
+        width: 90%;
+        opacity: 0.75;
+      }
     }
   }
 }

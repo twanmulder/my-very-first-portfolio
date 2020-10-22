@@ -1,10 +1,11 @@
 // STARFIELD
 .starfield {
   position: absolute;
+  bottom: -150vh;
   user-select: none;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 300vh;
   overflow: hidden;
   animation: fadein 8s;
   animation-fill-mode: forwards;
@@ -34,18 +35,23 @@
 
 .starfield > *:nth-child(1) {
   animation-duration: 32s;
+  animation-delay: -8s;
 }
 .starfield > *:nth-child(2) {
   animation-duration: 40s;
+  animation-delay: -10s;
 }
 .starfield > *:nth-child(3) {
   animation-duration: 70s;
+  animation-delay: -15s;
 }
 .starfield > *:nth-child(4) {
   animation-duration: 110s;
+  animation-delay: -25s;
 }
 .starfield > *:nth-child(5) {
   animation-duration: 240s;
+  animation-delay: -60s;
 }
 
 @keyframes starfieldRotate {

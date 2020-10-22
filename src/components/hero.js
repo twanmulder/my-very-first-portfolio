@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import Starfield from "./starfield";
 
@@ -8,15 +7,17 @@ function Hero() {
     <section className="hero">
       <Starfield />
       <div className="hero-text">
-        <h2 className="serif -reveal">Launch your business</h2>
-        <p className="-reveal">
-          Learn about how we can succesfully give a <strong>rocket-boost</strong> to your venture.
+        <p className="subtitle -fade-in">Hey, I'm</p>
+        <h2 className="serif">
+          <span className="-reveal">Twan</span> <span className="-reveal">Mulder</span>
+        </h2>
+        <p>
+          <span className="-fade-in -delay-1">Developer, </span>
+          <span className="-fade-in -delay-2">Consultant</span>
         </p>
-        <div className="button-wrapper -reveal">
-          <Link to="/about" className="button">
-            Explore the possibilities
-          </Link>
-        </div>
+        <p className="-fade-in -delay-3">
+          You can read about my development at <a href="https://www.thatsanegg.com/">"That's an Egg"</a>, or <a href="https://twitter.com/toktoktwan">follow me online</a>
+        </p>
       </div>
     </section>
   );
